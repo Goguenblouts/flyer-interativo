@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra Todas as Formas de Comprar Conosco!</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        margin: 20px;
+      }
+
+      #background-blur {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://github.com/Goguenblouts/testes/blob/main/Sem%20t%C3%ADtulo-2.png?raw=true') center/cover fixed;
+        filter: blur(4px);
+        z-index: -1;
+        /* Coloca o elemento para trás, atrás do conteúdo */
+      }
+
+      #flyer {
+        position: relative;
+        z-index: 1;
+        /* Garante que o conteúdo esteja sobre o fundo com blur */
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .maps {
+        width: 90%;
+        height: 50%;
+        border-radius: 20px;
+      }
+
+      /*Sessão de icones*/
+      .et-icon-phones {
+        color: green;
+        font-size: 30px;
+        margin-right: 20px;
+        margin: 0;
+      }
+
+      a {
+        color: #333;
+        font-size: 15px;
+      }
+
+      .phone-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 10px;
+        margin: 0;
+      }
+
+      h1,
+      p {
+        color: #333;
+      }
+
+      img {
+        max-width: 50%;
+        height: auto;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+
+      .loja {
+        max-width: 90%;
+      }
+
+      #icon-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 5px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .et-icon-box {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(151, 151, 151, 0.1);
+        text-align: left;
+        max-width: 300px;
+      }
+
+      .et-icon {
+        font-size: 36px;
+        margin-right: 20px;
+        color: #c90000;
+        display: inline-block;
+      }
+
+      .et-icon-box-title,
+      .et-icon-box-content {
+        color: #555;
+        line-height: 1.4;
+      }
+
+      /*Sessao para dispositivos moveis*/
+      @media screen and (max-width: 500px) {
+        #icon-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          max-width: none;
+          margin: 0;
+        }
+
+        .et-icon-box {
+          padding: 5px;
+        }
+
+        .phone-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        margin: 0;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background-blur"></div>
+    <div id="flyer">
+      <h1>Descubra Todas as Formas de Comprar Conosco!</h1>
+      <p>Na nossa loja você encontra diversas opções para realizar suas compras.</p>
+      <img class="loja" src="https://eletropeldistribuidora.com.br/wp-content/uploads/2023/11/A-FRENTE-DA-LOJA-ELETROPEL.jpg" alt="Loja Física">
+      <p>Visite-nos em nossa loja física e conheça nossos produtos pessoalmente!</p>
+      <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.1365014632725!2d-49.31262799999999!3d-16.6700514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef43e85de07fd%3A0x1d5615c806e6b1cc!2sEletropel%20Distribuidora%20de%20Auto%20Pe%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1706961770326!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="phone-container">
+        <div class="et-icon-phones">
+          <span class="el-icon fas fa-phone">
+            <a>(62) 3237-9700</a>
+          </span>
+        </div>
+
+        <div class="et-icon-phones">
+          <span class="el-icon fab fa-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=556232379700" target="_blank">(62) 3237-9700</a>
+          </span>
+        </div>
+      </div>
+      <hr>
+      <p>Preferência por compras online? Temos opções para você!</p>
+      <a href="https://eletropeldistribuidora.com.br/loja/" target="_blank">
+        <img src="https://eletropeldistribuidora.com.br/wp-content/uploads/2019/03/logo-eletropel-300x100.png" alt="Site Próprio">
+      </a>
+      <p>Explore nosso site e faça suas compras com comodidade e segurança.</p>
+      <hr>
+      <p>Estamos também no Mercado Livre!</p>
+      <a href="https://lista.mercadolivre.com.br/_CustId_413641068?item_id=MLB2814134495&category_id=MLB46659&seller_id=413641068&client=recoview-selleritems&recos_listing=true" target="_blank">
+        <img src="https://logodownload.org/wp-content/uploads/2016/08/mercado-livre-logo-8.png" alt="Mercado Livre">
+      </a>
+      <p>Confira nossos produtos no Mercado Livre e aproveite ofertas exclusivas.</p>
+      <hr>
+      <div id="icon-container">
+        <div class="et-icon-box et-item" data-parallax="false" data-move="false" data-coordinatex="0" data-coordinatey="0" data-speed="10">
+          <div class="et-icon-box-inner et-item-inner">
+            <div class="et-icon medium">
+              <span class="el-icon fas fa-truck"></span>
+            </div>
+            <div class="et-icon-content">
+              <h6 class="et-icon-box-title">Entrega Rápida</h6>
+              <div class="et-icon-box-content">
+                <p>Compre em nossa Loja Online e receba sua peça em até 30 minutos*</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="et-icon-box et-item" data-parallax="false" data-move="false" data-coordinatex="0" data-coordinatey="0" data-speed="10">
+          <div class="et-icon-box-inner et-item-inner">
+            <div class="et-icon medium">
+              <span class="el-icon fas fa-smile"></span>
+            </div>
+            <div class="et-icon-content">
+              <h6 class="et-icon-box-title">Atendimento Rápido</h6>
+              <div class="et-icon-box-content">
+                <p>Tenha um atendimento de excelência com atenção e rapidez</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="et-icon-box et-item" data-parallax="false" data-move="false" data-coordinatex="0" data-coordinatey="0" data-speed="10">
+          <div class="et-icon-box-inner et-item-inner">
+            <div class="et-icon medium">
+              <span class="el-icon fas fa-percent"></span>
+            </div>
+            <div class="et-icon-content">
+              <h6 class="et-icon-box-title">Cupons de Desconto</h6>
+              <div class="et-icon-box-content">
+                <p>Fique atendo às nossas redes sociais, e-mails e site para obter Cupons de até 60% de Desconto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="et-icon-box et-item" data-parallax="false" data-move="false" data-coordinatex="0" data-coordinatey="0" data-speed="10">
+          <div class="et-icon-box-inner et-item-inner">
+            <div class="et-icon medium">
+              <span class="el-icon fas fa-tools"></span>
+            </div>
+            <div class="et-icon-content">
+              <h6 class="et-icon-box-title">Auto Peças</h6>
+              <div class="et-icon-box-content">
+                <p>Temos diversas peças elétricas a pronta entrega</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="et-icon-box et-item" data-parallax="false" data-move="false" data-coordinatex="0" data-coordinatey="0" data-speed="10">
+          <div class="et-icon-box-inner et-item-inner">
+            <div class="et-icon medium">
+              <span class="el-icon fas fa-star"></span>
+            </div>
+            <div class="et-icon-content">
+              <h6 class="et-icon-box-title">30 anos de Mercado</h6>
+              <div class="et-icon-box-content">
+                <p>Estamos atuando a mais de 30 anos com garra e empenho</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="et-icon-box et-item" data-parallax="false" data-move="false" data-coordinatex="0" data-coordinatey="0" data-speed="10">
+          <div class="et-icon-box-inner et-item-inner">
+            <div class="et-icon medium">
+              <span class="el-icon fas fa-building"></span>
+            </div>
+            <div class="et-icon-content">
+              <h6 class="et-icon-box-title">Estrutura Impecável</h6>
+              <div class="et-icon-box-content">
+                <p>São 2.000 m² de área construída para armazenar até 20.000 itens no estoque</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
